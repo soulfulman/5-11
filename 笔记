@@ -1,0 +1,85 @@
+#define _CRT_SECURE_NO_WARNINGS 1
+#include <stdio.h>
+//int main()
+//{
+//	int arr[10] = { 0 };
+//	int i = 0;
+//	for (i = 0; i < 10; i++)
+//	{
+//		arr[i] = i;
+//	}
+//	for (i = 0; i < 10; i++)
+//	{
+//		printf("%d ", arr[i]);
+//	}
+//	return 0;
+//}
+////test.c 翻译环境->编译器（1.预编译，2编译，3.汇编），链接器
+////test.exe 运行环境
+//int main()
+//{
+//	int i = 0;
+//	int arr[10] = { 0 };
+//	for (i = 0; i < 10; i++)
+//	{
+//		arr[i] = i;
+//	}
+//	for (i = 0; i < 10; i++)
+//	{
+//		printf("%d", arr[i]);
+//	}
+//	return 0;
+//	//预编译，预处理（文本处理）
+//	//1.include头文件的包含
+//	//2.注释删除 使用空格替换注释
+//	//3.#define 
+//}
+//1.程序必须载入内存中2.程序的执行便开始3.开始执行程序代码4.终止程序
+//#include <string.h>
+//int main()
+//{
+//	printf("%s\n", _FILE_);
+//	printf("%d\n", _LINE_);
+//	return 0;
+//}
+//#define STR "hehe"
+//#define MAX 100//尽量不加分号
+//int main()
+//{
+//	int a = MAX;
+//	printf("%d\n", MAX);
+//	return 0;
+//}
+//#define SQUARE(x)(x)*(x)//定义宏 x称为整体不容易出错
+//int main()
+//{
+//	int ret = SQUARE(5);
+//	printf("%d", ret);
+//	return 0;
+//}
+//#define DOUBLE(X)((X)+(X))
+//int main()
+//{
+//	int a = 5;
+//	int ret = 10 * DOUBLE(a);
+//	printf("%d\n", ret);
+//	return 0;
+//}
+//#define PRINT (X) printf("the value of "#X"is%d\n",X)
+//
+//int main()
+//{
+//	int a = 10;
+//	int b = 20;
+//	PRINT(a);
+//	PRINT(b);
+//	return 0;
+//}
+#define CAT(X,Y) X##Y
+
+int mian()
+{
+	int class84 = 2020;
+	printf("%d\n", CAT(class, 84));
+	return 0;
+}
